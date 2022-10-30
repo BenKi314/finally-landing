@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  
+  
+</head>
+<body>
+  <div class="backdrop">
+    <img class="spin" src="./images/bg-stars.svg">
+    <img src="./images/pattern-hills.svg">
+  </div>
+  <div class="everything">
+    <p class="largeText" id="bigText">WE'RE FINALLY LANDING</p>
+    <div class="countdownContainer">
+      <div class="countdown">
+        <div class="ticker">
+          <div class="top">
+            <div class="bottom">
+              <p class="countText" id="days"></p>
+            </div>
+          </div>
+        </div>
+        <p class="smolText">D A Y S</p>
+      </div>
+
+      <div class="countdown">
+        <div class="ticker">
+          <div class="top">
+            <div class="bottom">
+              <p class="countText" id="hours"></p>
+            </div>
+          </div>
+        </div>
+        <p class="smolText">H O U R S</p>
+      </div>
+
+      <div class="countdown">
+        <div class="ticker">
+          <div class="top">
+            <div class="bottom">
+              <p class="countText" id="minutes"></p>
+            </div>
+          </div>
+        </div>
+        <p class="smolText">M I N U T E S</p>
+      </div>
+
+      <div class="countdown">
+        <div class="ticker">
+          <div class="top">
+            <div class="bottom">
+              <p class="countText" id="seconds"></p>
+            </div>
+          </div>
+        </div>
+        <p class="smolText">S E C O N D S</p>
+      </div>
+    </div>
+
+    <div class="icons">
+      <!--
+        Facebook
+        Pinterest
+        Instagram
+      -->
+      <img class="icon" src="./images/crusty_facebook.png"
+      onmouseover="this.src='./images/active_crusty_facebook.png'"
+      onmouseout="this.src='./images/crusty_facebook.png'">
+      <img class="icon" src="./images/crusty_pinterest.png"
+      onmouseover="this.src='./images/active_crusty_pinterest.png'"
+      onmouseout="this.src='./images/crusty_pinterest.png'">
+      <img class="icon" src="./images/crusty_instagram.png"
+      onmouseover="this.src='./images/active_crusty_instagram.png'"
+      onmouseout="this.src='./images/crusty_instagram.png'">
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
